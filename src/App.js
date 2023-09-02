@@ -70,7 +70,7 @@ function App() {
   const result = filteredData(products, selectedCategory, query);
 
   return <>
-    <Sidebar />
+    <Sidebar handleChange={handleChange} />
     <Navigation />
     <Recommended />
     <Products />
