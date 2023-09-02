@@ -71,10 +71,10 @@ function App() {
 
   return <>
     <Sidebar handleChange={handleChange} />
-    <Navigation />
-    <Recommended />
-    <Products />
-    </>
+    <Navigation query={query} handleInputChange={handleInputChange} />
+    <Recommended handleClick={handleClick} />
+    <Products result={result} />
+  </>
 }
 
 export default App;
